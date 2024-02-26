@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3009:3009"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      - .env.docker  
+  db:
+    image: "postgres"
+    environment:
+      POSTGRES_PASSWORD: "mark"
+      POSTGRES_USER: "mark"
+      POSTGRES_DB: "mark"
+    ports:
+      - "5433:5433"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

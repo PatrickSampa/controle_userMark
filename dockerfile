@@ -1,15 +1,14 @@
-FROM node:16-alpine
+FROM node:18
 
 WORKDIR /app
 
 COPY package.json .
-RUN yarn install
+RUN npm install
 
 COPY prisma/schema.prisma .
-RUN prisma generate
+RUN npx prisma generate
 
 COPY . .
 
-RUN npm run build
 
-CMD npm run start:prod
+CMD npm run start:dev

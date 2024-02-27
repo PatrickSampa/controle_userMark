@@ -10,17 +10,15 @@ services:
     depends_on:
       - db
     environment:
-      - .env.docker  
+      - JWT_SECRET=${JWT_SECRET} 
   db:
     image: "postgres"
+    restart: always
     environment:
-      POSTGRES_PASSWORD: "mark"
-      POSTGRES_USER: "mark"
-      POSTGRES_DB: "mark"
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_DB: ${DB_NAME}
     ports:
-      - "5433:5433"
+      - ${DB_PORT}:5433
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
+      - ./docker-data/db:/lib/postgresql/data

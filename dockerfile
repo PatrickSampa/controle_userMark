@@ -1,14 +1,12 @@
-FROM node:18
+FROM node:20
 
 WORKDIR /app
 
+COPY . .
 COPY package.json .
 RUN npm install
 
-COPY prisma/schema.prisma .
 RUN npx prisma generate
-
-COPY . .
 
 
 CMD npm run start:dev

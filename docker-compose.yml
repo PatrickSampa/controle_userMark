@@ -4,19 +4,21 @@ services:
   app:
     build: .
     ports:
-      - "3009:3009"
+      - "3010:3010"
+    environment:
+      DATABASE_URL: postgresql://postgres:shazam@localhost:5435/picapau?schema=public
     depends_on:
-      - postgres
+      - db
+    command: sh -c "npx prisma migrate deploy && npm run start"
+
+  db:
+    image: postgres:15
     environment:
-      - JWT_SECRET=oCeo!0pb1Ka1.3!LZx]ZKsLB9hEPKlM< 
-  postgres:
-    container_name: postgres
-    image: "postgres"
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
-      POSTGRES_DB: postgres
-    ports:
-      - 5432:5432
-    
+      POSTGRES_PASSWORD: shazam
+      POSTGRES_DB: picapau
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

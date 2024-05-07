@@ -1,12 +1,20 @@
-FROM node:20
+# Usar a imagem oficial do Node.js como base
+FROM node:14
 
+# Definir o diretório de trabalho no contêiner
 WORKDIR /app
 
-COPY . .
-COPY package.json .
+# Copiar o arquivo package.json e package-lock.json (se disponível)
+COPY package*.json ./
+
+# Instalar dependências do projeto
 RUN npm install
 
-RUN npx prisma generate
+# Copiar os arquivos restantes do projeto para o diretório de trabalho
+COPY . .
 
+# Expor a porta que a aplicação usa
+EXPOSE 3010
 
-CMD npm run start:dev
+# Comando para rodar a aplicação
+CMD ["npm", "run", "start"]

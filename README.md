@@ -1,73 +1,72 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+<!-- remember update all README when end project-->
+# 2º Desafio | AWS_FULLSTACK_FEV24 - Projeto Compacine ️️
+ <img width="20%"  src="./public/imagesREADME/compassUolLogoSvg.svg"/>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Este é o repositório do projeto "Login + Keep Alive" desenvolvido como parte do estágio na Compass UOL. Abaixo estão as informações importantes para o desenvolvimento, entrega e funcionalidades do projeto.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Como instalar as dependências:
+```sh
+git clone https://github.com/EduardoMG12/Challenge-2---Squad-1-.git
+cd Challenge-2---Squad-1-
+npm install
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ yarn install
 ```
 
-## Running the app
+## Como rodar o projeto:
+```sh
 
-```bash
-# development
-$ yarn run start
+npm run dev
 
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
 ```
 
-## Test
 
-```bash
-# unit tests
-$ yarn run test
+<details>
+  <summary>Algumas imagens o projeto <img width="20" src="https://flagicons.lipis.dev/flags/4x3/br.svg"></summary>
+  <img width="40%"  src="./public/imagesREADME/folderStructure.png"/>
+  <img width="40%"  src="./public/imagesREADME/expressConfigExample.png"/>
+  <img width="40%"  src="./public/imagesREADME/dockerFileConfigExample.png"/><!--  remember add image configExpressProject when end project
+   remember add image dockerConfigurations when end project
+  <img width="40%"  src="./public/imagesREADME/"/>  remember add image first route when end project
+  <img width="40%"  src="./public/imagesREADME/"/>  remember add image second route when end project
+  and add other routes images if want
+  squad image for some one daily
+  --> 
+</details>
 
-# e2e tests
-$ yarn run test:e2e
 
-# test coverage
-$ yarn run test:cov
-```
+## Sobre o desenvolvimento projeto.
 
-## Support
+### Descrição.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+O projeto consiste em criar um CRUD completo de um sistema de cinema, Obrigatoriamente utilizando Express, ORM e Docker Compose. O Projeto deve seguir as especificações do [Notion](https://animated-beard-0ba.notion.site/2-Desafio-AWS_FULLSTACK_FEV24-8e410d1f653241cb8553c763d16d305c), com atenção especial ao prazo e os requisitos obrigatorios do projeto.
 
-## Stay in touch
+### *P.O*
+- **Anthoni Bortolotto Martinelli:** [anthoni.martinelli@compasso.com.br](mailto:anthoni.martinelli@compasso.com.br)
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+### *Instrutores*
+- **Rafaela Janeczko:** [rafaela.janeczko@compasso.com.br](mailto:rafaela.janeczko@compasso.com.br)
+- **Maithe Saldanha Ferrao:** [maithe.ferrao@compasso.com.br](mailto:maithe.ferrao@compasso.com.br)
+- **Cassio Silva Takarada:** [cassio.takarada@compasso.com.br](mailto:cassio.takarada@compasso.com.br)
+- **Leonardo Buhring Muller:** [l.muller.dev@gmail.com](mailto:l.muller.dev@gmail.com)
+- **Gabriel Bezerra Rodrigues:** [gabriel.bezerra@compasso.com.br](mailto:gabriel.bezerra@compasso.com.br)
 
-## License
+### **Prazo**
 
-Nest is [MIT licensed](LICENSE).
+Prazo para **envio** do e-mail com **link do repositório:** 09/04/2024  (terça-feira), **até às 17h30**.
+
+## Sobre o desenvolvimento feito pela nossa Squad
+
+### Squad: 
+
+- [**Claudio Renato**](https://github.com/claudiofariias)
+- [**Charles Eduardo**](https://github.com/EduardoMG12)
+- [**Edenilson Costa**](https://github.com/gameprime)
+- [**Fabio Aparecido**](https://github.com/fabusilva)
+- [**Patrick Sampaio**](https://github.com/PatrickSampa)
+
+### Trello:
+[Trello](https://trello.com/invite/b/Je4JEUey/ATTI918cd14197eb633febcad331e5dce02e59691D70/projeto-compacine)
+
+### Descrição:
+
+### Dificuldades do projeto:

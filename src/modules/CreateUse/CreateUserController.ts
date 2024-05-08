@@ -10,7 +10,7 @@ export class CreateUseController {
 			const role = 1;
 			const novoFilme = await this.createUseUseCase.execute({nome, email, password, cpf, role});
 			if(novoFilme instanceof Error){
-				return response.status(400).json('usuario ja existe');
+				return response.status(400).send('usuario ja existe');
 			}
 			return response.status(201).json(novoFilme);
 		}catch(error){
